@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Spartan", sans-serif;
+    /* cursor: default; */
 }
 
 html {
@@ -17,28 +18,33 @@ h1 {
     font-size: 50px;
     line-height: 64px;
     color: #222;
+    cursor: default;
 }
 
 h2 {
     font-size: 46px;
     line-height: 54px;
     color: #222;
+    cursor: default;
 }
 
 h4 {
     font-size: 20px;
     color: #222;
+    cursor: default;
 }
 
 h6 {
     font-weight: 700;
     font-size: 12px;
+    cursor: default;
 }
 
 p {
     font-size: 16px;
     color: #465b52;
     margin: 15px 0 20px 0;
+    cursor: default;
 }
 
 .section-p1 {
@@ -53,7 +59,7 @@ body {
     width: 100%;
 }
 
-button.normal{
+button.normal {
     font-size: 14px;
     font-weight: 600;
     padding: 15px 30px;
@@ -65,7 +71,7 @@ button.normal{
     outline: none;
 }
 
-button.sm-box{
+button.sm-box {
     font-size: 14px;
     font-weight: 700;
     padding: 15px 22px;
@@ -74,6 +80,7 @@ button.sm-box{
     border: none;
     transition: .3s ease;
 }
+
 #header {
     display: flex;
     justify-content: space-between;
@@ -100,7 +107,7 @@ button.sm-box{
 #navbar li {
     list-style: none;
     padding: 0 20px;
-    position:relative;
+    position: relative;
 }
 
 #navbar li a {
@@ -112,13 +119,13 @@ button.sm-box{
 }
 
 #navbar li a:hover,
-#navbar li a.active{
+#navbar li a.active {
     color: #088178;
 }
 
 #navbar li a.active::after,
-#navbar li a:hover::after
-{    /* pseudo classes */
+#navbar li a:hover::after {
+    /* pseudo classes */
     content: "";
     width: 30%;
     height: 2px;
@@ -129,12 +136,19 @@ button.sm-box{
     transition: .5s ease;
 }
 
+#close {
+    display: none;
+}
 
-#hero{
+#mobile {
+    display: none;
+}
+
+#hero {
     background-image: url(img/hero4.png);
     height: 90vh;
     width: 100%;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: top 25% right 0;
     display: flex;
@@ -144,18 +158,19 @@ button.sm-box{
     padding: 0 120px;
 }
 
-#hero h4{
+#hero h4 {
     margin-bottom: 20px;
 }
 
-#hero h1{
+#hero h1 {
     color: #088178;
 }
-#hero p{
+
+#hero p {
     font-weight: 600;
 }
 
-#hero button{
+#hero button {
     padding: 18px 80px 18px 65px;
     background-color: transparent;
     border: none;
@@ -165,14 +180,15 @@ button.sm-box{
     cursor: pointer;
     font-weight: bold;
 }
-#feature{
+
+#feature {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-#feature .fe-box{
+#feature .fe-box {
     width: 180px;
     text-align: center;
     padding: 25px 15px;
@@ -181,52 +197,64 @@ button.sm-box{
     margin: 15px 0;
     transition: .3s ease;
 }
-#feature .fe-box img{
+
+#feature .fe-box img {
     width: 100%;
     margin-bottom: 10px;
 }
-#feature .fe-box:hover{
+
+#feature .fe-box:hover {
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
 
-#feature .fe-box h6{
+#feature .fe-box h6 {
     display: inline-block;
     line-height: 1;
     padding: 9px 8px 6px 8px;
-    background-color:pink;
+    background-color: pink;
     color: #088178;
     border-radius: 4px;
 }
 
-#feature .fe-box:nth-child(2) h6{
+#feature .fe-box:nth-child(2) h6 {
     background-color: rgba(167, 78, 93, 0.429);
 }
-#feature .fe-box:nth-child(3) h6{
+
+#feature .fe-box:nth-child(3) h6 {
     background-color: rgba(78, 167, 87, 0.326);
 }
-#feature .fe-box:nth-child(4) h6{
+
+#feature .fe-box:nth-child(4) h6 {
     background-color: rgba(167, 167, 78, 0.316);
 }
-#feature .fe-box:nth-child(5) h6{
+
+#feature .fe-box:nth-child(5) h6 {
     background-color: rgba(78, 94, 167, 0.323);
 }
-#feature .fe-box:nth-child(6) h6{
+
+#feature .fe-box:nth-child(6) h6 {
     background-color: rgba(167, 78, 143, 0.314);
 }
 
 
-#feature_product{
+#feature_product {
     text-align: center;
 }
 
 #feature_product .pro-container {
-    display: flex;                /* Enables horizontal layout */
-    flex-wrap: wrap;              /* Allows wrapping on smaller screens */
-    justify-content: space-between; /* Even spacing between items */
-    padding: 20px;                /* Optional: adds breathing room */
-    gap: 20px;                    /* Optional: spacing between cards */
+    display: flex;
+    /* Enables horizontal layout */
+    flex-wrap: wrap;
+    /* Allows wrapping on smaller screens */
+    justify-content: space-between;
+    /* Even spacing between items */
+    padding: 20px;
+    /* Optional: adds breathing room */
+    gap: 20px;
+    /* Optional: spacing between cards */
 }
-#feature_product .pro{
+
+#feature_product .pro {
     width: 23%;
     min-width: 250px;
     padding: 10px 12px 20px 12px;
@@ -239,59 +267,64 @@ button.sm-box{
 
 }
 
-#feature_product .pro:hover{
+#feature_product .pro:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.09);
 }
-#feature_product .pro img{
+
+#feature_product .pro img {
     width: 100%;
     border-radius: 20px;
 }
 
-#feature_product .pro .des{
-    text-align: start; 
+#feature_product .pro .des {
+    text-align: start;
 }
 
-#feature_product .pro .des span{
+#feature_product .pro .des span {
     color: #595353;
     display: inline-block;
-    margin-top:10px;
-    
+    margin-top: 10px;
+
 }
 
-#feature_product .pro .des h5{
+#feature_product .pro .des h5 {
     color: #282828;
     font-weight: 800;
-    margin-top:5px;
+    margin-top: 5px;
 }
 
-#feature_product .pro .des .star i{
-    color:  #eeff00;
+#feature_product .pro .des .star i {
+    color: #eeff00;
     /* text-shadow: 0px 0px 20px rgb(0, 0, 0); */
-    margin-top:5px;
+    margin-top: 5px;
 }
+
 #feature_product .pro:last-child .des .star i:last-child,
-#feature_product .pro:nth-child(3) .des .star i:last-child{
+#feature_product .pro:nth-child(3) .des .star i:last-child {
     display: none;
 }
 
-#feature_product .pro .des h4{
+#feature_product .pro .des h4 {
     color: #088178;
     margin-top: 4px;
-    font-size:smaller;
+    font-size: smaller;
 }
-#feature_product .pro .cart{
+
+#feature_product .pro .cart {
     background-color: #0881795a;
     padding: 10px;
     border-radius: 50px;
     position: absolute;
-    bottom:15px;
-    right:30px;
+    bottom: 15px;
+    right: 30px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.227);
 }
-#feature_product .pro .cart:hover{
+
+#feature_product .pro .cart:hover {
     box-shadow: 0 0 20px #088179b8
 }
-#banner{
+
+#banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -303,35 +336,37 @@ button.sm-box{
     background-position: center;
 }
 
-#banner h4{
+#banner h4 {
     color: #fff;
     font-size: 16px;
 }
-#banner h2{
+
+#banner h2 {
     color: #fff;
     font-size: 30px;
     padding: 10px 0;
 }
 
-#banner h2 span{
+#banner h2 span {
     color: red;
 }
 
-#banner button{
+#banner button {
     transition: .6s ease;
 }
-#banner button:hover{
+
+#banner button:hover {
     background: #088178;
     color: rgb(255, 255, 255);
 }
 
-#sm-banner{
+#sm-banner {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#sm-banner .banner-box{
+#sm-banner .banner-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -341,66 +376,73 @@ button.sm-box{
     height: 50vh;
     background-position: center;
     background-size: cover;
-    padding-left:30px;
+    padding-left: 30px;
 }
-#sm-banner #banner-box1{
+
+#sm-banner #banner-box1 {
     background-image: url("img/banner/b17.jpg");
 }
-#sm-banner #banner-box2{
+
+#sm-banner #banner-box2 {
     background-image: url("img/banner/b10.jpg");
 }
 
-#sm-banner .banner-box h5{
+#sm-banner .banner-box h5 {
     font-weight: 400;
     font-size: large;
     color: white;
 }
-#sm-banner .banner-box h2{
+
+#sm-banner .banner-box h2 {
     color: white;
     margin-top: 10px;
 }
-#sm-banner .banner-box h4{
+
+#sm-banner .banner-box h4 {
     font-weight: 600;
     font-size: 18px;
     margin-top: 10px;
     color: white;
 }
 
-#sm-banner #banner-box1 button{
+#sm-banner #banner-box1 button {
     margin-top: 20px;
     background: #088178;
     color: white;
-} 
-#sm-banner #banner-box2 button{
+}
+
+#sm-banner #banner-box2 button {
     margin-top: 20px;
     background: transparent;
     color: white;
     /* border: 2px solid white; */
     box-shadow: inset 0 0 0 2px white;
-} 
+}
 
-#sm-banner #banner-box1:hover button{
+#sm-banner #banner-box1:hover button {
     background: transparent;
     color: white;
-    /* border: 2px solid white; */   
-    box-shadow: inset 0 0 0 2px white;  
+    /* border: 2px solid white; */
+    box-shadow: inset 0 0 0 2px white;
 }
-#sm-banner #banner-box2:hover button{
+
+#sm-banner #banner-box2:hover button {
     background: #088178;
     color: white;
     box-shadow: none;
 }
 
-#banner3{
+#banner3 {
     display: flex;
     justify-content: space-between;
     padding: 0 110px;
     flex-wrap: wrap;
 }
-#banner3 .banner3-box{
+
+#banner3 .banner3-box {
     display: flex;
     flex-direction: column;
-    align-items:first baseline;
+    align-items: first baseline;
     justify-content: center;
     height: 30vh;
     min-width: 400px;
@@ -409,26 +451,29 @@ button.sm-box{
     padding: 20px;
 }
 
-#banner3 .banner3-box h2{
+#banner3 .banner3-box h2 {
     font-size: 25px;
     font-weight: 900;
     color: white;
 }
-#banner3 .banner3-box h5{
+
+#banner3 .banner3-box h5 {
     color: rgba(255, 0, 0, 0.619);
 }
 
-#banner3 #banner3-box1{
+#banner3 #banner3-box1 {
     background-image: url("/img/banner/b7.jpg");
 }
-#banner3 #banner3-box2{
+
+#banner3 #banner3-box2 {
     background-image: url("/img/banner/b4.jpg");
 }
-#banner3 #banner3-box3{
+
+#banner3 #banner3-box3 {
     background-image: url("/img/banner/b18.jpg");
 }
 
-#newsletter{
+#newsletter {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -439,22 +484,26 @@ button.sm-box{
     background-repeat: no-repeat;
 }
 
-#newsletter .newstext h4{
+#newsletter .newstext h4 {
     color: white;
 }
-#newsletter .newstext p{
+
+#newsletter .newstext p {
     color: rgb(125, 125, 125);
     font-weight: 600;
 }
-#newsletter .newstext p span{
+
+#newsletter .newstext p span {
     color: orange;
 }
-#newsletter .form{
+
+#newsletter .form {
     display: flex;
     width: 40%;
 
 }
-#newsletter .form input{
+
+#newsletter .form input {
     height: 3.125rem;
     padding: 0 1.25em;
     font-size: 14px;
@@ -464,59 +513,353 @@ button.sm-box{
     border-radius: 2px 0px 0px 2px;
 }
 
-#newsletter .form button{
+#newsletter .form button {
     background-color: #088178;
     color: white;
     white-space: nowrap;
     border-radius: 0;
     border-radius: 0 2px 2px 0;
 }
-#newsletter .form input::placeholder{
+
+#newsletter .form input::placeholder {
     align-items: first baseline;
 }
 
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-footer .col{
+
+footer .col {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 20px;
 }
 
-footer .col .icon{
+footer .col .icon {
     display: flex;
     gap: 10px;
     margin-top: 10px;
-   
+    cursor: pointer;
+
 }
-footer .col img{
+
+footer .col .icon i:hover {
+    color: #088178;
+}
+
+footer .col img {
     margin-bottom: 10px;
 }
 
-footer .col ul{
+footer .col ul {
     list-style: none;
     margin-top: 10px;
 }
-footer .col ul li{
+
+footer .col ul li {
     margin-top: 10px;
 }
-footer .col ul li a{
+
+footer .col ul li a {
     text-decoration: none;
     color: black;
     font-size: 14px;
 }
 
-footer .col .row img{
-    border: 2px solid #088178;
-    border-radius: 4px;
+footer .col ul li a:hover {
+    color: #088178;
 }
 
-.copyright p{
+footer .col .row img {
+    border: 2px solid #088178;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.copyright p {
     width: 100%;
     text-align: center;
 }
+
+
+/* shop page style  */
+#shop-hero{
+    background-image: url('img/banner/b1.jpg');
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 14px;
+}
+
+#shop-hero h2{
+    color: white;
+}
+#shop-hero p{
+    color: white;
+    font-weight: 700;
+}
+
+#pagenation{
+    text-align: center;
+}
+
+#pagenation a{
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 4px;
+    background-color: #088178;
+    color: #fff;
+    font-weight: 600;
+}
+
+#pagenation a i{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+/* product description */
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+#prodetails .single-pro-img img{
+    width: 100%;
+}
+#prodetails .single-pro-img{
+    width: 40%;
+    margin-right:50px;
+}
+#prodetails .single-pro-img .sm-img-grp{
+    display: flex;
+    justify-content: space-between;
+}
+#prodetails .single-pro-img .sm-img-grp .sm-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails .single-pro-details{
+    width: 60%;
+    padding-top:30px;
+}
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+#prodetails .single-pro-details input:focus,
+#prodetails .single-pro-details select:focus{
+    outline: none;
+}
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro-details button{
+    background-color: #088178;
+    color: white;
+}
+
+#prodetails .single-pro-details span{
+    line-height: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+/* middle screen device */
+
+
+@media (max-width:799px) {
+    .section-p1 {
+        padding: 40px 40px;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        height: 50vh;
+        width: 300px;
+        background-color: white;
+        top: 0;
+        right: -300px;
+        gap: 25px;
+        padding: 100px 0 0 20px;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.3);
+        transition: 0.3s;
+    }
+
+    #mobile {
+        display: flex;
+        gap: 20px;
+        color: black;
+        font-size: 24px;
+    }
+
+    #mobile i {
+        color: black;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        font-size: 24px;
+        color: rgb(255, 0, 0);
+    }
+
+    #lg-bag {
+        display: none;
+    }
+
+    #hero {
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+
+    #feature {
+        justify-content: center;
+    }
+
+    #feature .fe-box {
+        margin: 15px 15px;
+        transition: .3s ease;
+    }
+
+    #feature_product .pro-container {
+        justify-content: center;
+    }
+
+    #feature_product .pro {
+        margin: 15px;
+    }
+
+    #banner {
+        height: 20vh;
+    }
+
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 30vh;
+    }
+
+    #sm-banner #banner-box1 {
+        background-position: center;
+    }
+
+    #banner3 {
+        padding: 0 0px;
+    }
+
+    #banner3 .banner3-box {
+
+        height: 30vh;
+        min-width: 100%;
+    }
+
+    #newsletter .form {
+        display: flex;
+        width: 70%;
+    }
+}
+
+@media (max-width:477px) {
+    .section-p1 {
+        padding: 20px;
+    }
+
+    #header {
+        padding: 10px 40px;
+    }
+
+    #hero {
+        background-position: 65%;
+        padding: 0 20px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    #feature .fe-box {
+        margin: 10px;
+        width: 160px;
+    }
+
+    #feature {
+        justify-content: space-between;
+    }
+
+    #feature_product .pro {
+        width: 100%;
+    }
+
+    #banner h2 {
+        font-size: 26px;
+    }
+
+    #banner {
+        height: 30vh;
+    }
+    button.normal {
+        font-size: 14px;
+        font-weight: 600;
+        padding: 15px 30px;
+        color: #000;
+        background-color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+    }
+    #sm-banner {
+        padding: 0
+    }
+    #newsletter .form {
+        display: flex;
+        width: 90%;
+    }
+   
+}
+
+@media (max-width:398px) {
+    #feature .fe-box {
+        width: 150px;
+    }
+    #newsletter .form {
+        display: flex;
+        width: 90%;
+    }
+}
+
