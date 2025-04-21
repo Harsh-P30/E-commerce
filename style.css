@@ -682,9 +682,263 @@ footer .col .row img {
 }
 
 #prodetails .single-pro-details span{
-    line-height: 10px;
+    line-height: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
 }
+
+/* Blog tab */
+.blog-hero{
+    background-image: url("/img/banner/b19.jpg");
+    height: 40vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+} 
+
+.blog-hero h1{
+    color: white;
+}
+.blog-hero p{
+    color: rgb(231, 231, 231);
+}
+#all-blog{
+    margin: 100px 0;
+}
+
+.blog{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40vh;
+    margin: 100px 0 0 100px;
+    position:relative;
+    /* width: 100%; */
+}
+.blog h1{
+    position: absolute;
+    left: 50px;
+    top: -35px;
+    font-weight: bold;
+    color: #595353c0;
+}
+
+.blog .image {
+  
+    width: 40%; 
+    height: 100%; 
+    display: flex;
+    justify-content: left; 
+    background-position: left 50px center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.blog #img1{
+    background-image: url('/img/blog/b1.jpg'); 
+}
+.blog #img2{
+    background-image: url('/img/blog/b2.jpg'); 
+}
+.blog #img3{
+    background-image: url('/img/blog/b3.jpg'); 
+}
+.blog #img4{
+    background-image: url('/img/blog/b4.jpg'); 
+}
+.blog #img5{
+    background-image: url('/img/blog/b5.jpg'); 
+}
+.blog #img6{
+    background-image: url('/img/blog/b6.jpg'); 
+}
+.blog #img7{
+    background-image: url('/img/blog/b7.jpg'); 
+}
+.blog .text{
+    width: 58%;
+    padding-right: 150px;
+    text-align: justify;
+}
+
+/* About page */
+
+#about-hero{
+    background-image: url('img/about/banner.png');
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 14px;
+}
+
+#about-hero h2{
+    color: white;
+}
+#about-hero p{
+    color: white;
+    font-weight: 700;
+}
+
+#about-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px;
+}
+
+#about-head img{
+    width: 45%;
+}
+#about-head #text{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+#about-head #text h5{
+    font-weight: 800;
+    font-size: 36px;
+}
+#about-head #text p{
+    text-align: justify;
+}
+
+#about-head #text marquee{
+    background-color: #cccccc;
+    padding: 10px;
+}
+#about-head #text marquee:hover{
+    color:#088178;
+    background-color: #cccccc7c;
+}
+
+#about-app h1{
+    text-align: center;
+}
+
+#about-app #video{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top:80px ;
+}
+#about-app #video video{
+    width: 60%;
+    border-radius: 20px;
+}
+
+/* error page */
+
+#error{
+    background-image: url(/img/error.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:safe;
+    align-items: center;
+
+
+}
+#error h1{
+    margin-top: 20px;
+    text-shadow: 0 0 10px rgb(112 112 112);
+}
+#error p{
+    padding-top: 25px;
+    color: #F36D44;
+    font-weight: bolder;
+    font-size: 24px;
+    text-shadow: 0 0 10px rgb(112 112 112);
+}
+.error-newsletter{
+    margin: 0;
+
+}
+
+
+/* contact page  */
+.contact-hero{
+    background-image: url("/img/about/banner.png");
+    height: 40vh;
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+} 
+
+.contact-hero h1{
+    color: white;
+}
+.contact-hero p{
+    color: rgb(231, 231, 231);
+}
+#address{
+    display: flex;
+    justify-content: space-between;
+    height: 70vh;
+}
+#address #details{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+#address #details p{
+    font-size: small;
+    color: #000;
+    font-weight: 500;
+    margin: 20px 0 0px 0;
+}
+#address #details ul{
+    list-style: none;
+}
+#address #details ul li{
+    margin-top: 10px;
+}
+#address #details ul .fa-map-location-dot{
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.511), rgba(0, 0, 255, 0.477));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#address #details ul .fa-envelope{
+    color: transparent;
+    background: linear-gradient(to top, red , rgb(0, 0, 0));
+    -webkit-background-clip: text;
+}
+
+#address #map{
+    width: 50%;
+    height: 100%;
+ 
+}
+#address #map iframe {
+    height: 100%;
+    width: 100%;
+}
+
+
 /* middle screen device */
 
 
@@ -788,6 +1042,21 @@ footer .col .row img {
         display: flex;
         width: 70%;
     }
+
+    /* blog page  */
+    .blog .text {
+        padding-right: 50px;
+    }
+
+    .blog {
+        margin: 100px 0 0 100px;
+    }
+    .blog .image {
+        
+        background-position: left 50px center;
+        background-size: cover;
+       
+    }
 }
 
 @media (max-width:477px) {
@@ -850,9 +1119,36 @@ footer .col .row img {
         display: flex;
         width: 90%;
     }
-   
+/* blog page */
+    .blog {
+        margin: 10px;
+    }
+    .blog .image {
+        background-position: left 10px center;
+    }
+    .blog h1 {
+
+        left: 10px;
+        top: -35px;
+    }
+    .blog .text {
+        padding-right: 10px;
+    }
+    .blog .text p {
+        font-size: 12px;
+    }
+    .blog {
+        margin: 50px 10px;
+    }
+    
 }
 
+
+@media (max-width:959px) {
+    p {
+        font-size: 14px; 
+    }
+}
 @media (max-width:398px) {
     #feature .fe-box {
         width: 150px;
@@ -861,5 +1157,28 @@ footer .col .row img {
         display: flex;
         width: 90%;
     }
+
+    /* blog-page */
+    .blog .image {
+        width: 48%;
+        background-position: center;
+
+    }
+    .blog h1 {
+        font-size: 28px;
+        left: 10px;
+        top: -35px;
+    }
+    .blog .text {
+        width: 48%;
+        padding-right: 10px;
+    }
+    .blog .text h5{
+        font-size: 12px;
+    }
+    .blog .text p {
+        font-size: 10px;
+    }
 }
+
 
