@@ -26,16 +26,16 @@
                     <a href="shop.html">Shop</a>
                 </li>
                 <li>
-                    <a  href="blog.html">Blogs</a>
+                    <a href="blog.html">Blogs</a>
                 </li>
                 <li>
                     <a href="about.html">About</a>
                 </li>
                 <li>
-                    <a   href="contact.html">Contact</a>
+                    <a href="contact.html">Contact</a>
                 </li>
                 <li>
-                    <a class="active"   href="cart.html" id="lg-bag"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a class="active" href="cart.html" id="lg-bag"><i class="fa-solid fa-bag-shopping"></i></a>
                 </li>
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
 
@@ -44,63 +44,103 @@
 
         <div id="mobile">
             <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+
             <i id="bar" class="fa-solid fa-bars"></i>
         </div>
     </section>
 
 
     <div class="contact-hero">
-        <h1>#let's_talk</h1>
-        <p>LEAVE A MESSAGE. We love to here from you!</p>
+        <h1>#Cart</h1>
+        <p>Thank You for buying products from us!</p>
     </div>
 
-    <section id="address" class="section-p1">
-        <div id="details">
-            <p>GET IN TOUCH</p>
-            <h4>Visit one of our agency locations or contact us today</h4>
-            <h5>Head Office</h5>
-            <ul>
-                <li> <i class="fa-solid fa-map-location-dot"></i> Lorem ipsum dolor sit amet.</li>
-                <li><i class="fa-solid fa-envelope"></i> contact@example.com </li>
-                <li><i class="fa-solid fa-headset"></i> +91 54127 541897</li>
-                <li><i class="fa-regular fa-clock"></i> Monday-Friday</li>
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="img/products/f1.jpg" alt="#"></td>
+                    <td>Cartoon Astronaut T-Shirt</td>
+                    <td>₹ 799</td>
+                    <td><input type="number" value="1"> </td>
+                    <td>₹ 799</td>
 
-            </ul>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="img/products/f2.jpg" alt="#"></td>
+                    <td>Cartoon Astronaut T-Shirt</td>
+                    <td>₹ 375</td>
+                    <td><input type="number" value="3"> </td>
+                    <td>₹ 1125</td>
+
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="img/products/f3.jpg" alt="#"></td>
+                    <td>Cartoon Astronaut T-Shirt</td>
+                    <td>₹ 399</td>
+                    <td><input type="number" value="2"> </td>
+                    <td>₹ 798</td>
+
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="img/products/f4.jpg" alt="#"></td>
+                    <td>Cartoon Astronaut T-Shirt</td>
+                    <td>₹ 699</td>
+                    <td><input type="number" value="1"> </td>
+                    <td>₹ 699</td>
+
+                </tr>
+            </tbody>
+            
+        </table>
+    </section>
+
+
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <input type="text" placeholder="Enter Your Coupon">
+            <button class="normal">Apply</button>
         </div>
-        
-        <div id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28010.116307586046!2d77.1727220823747!3d28.651796791837025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d029c5f402ed3%3A0x942174294c9dd946!2sKarol%20Bagh%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1745239051092!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="total">
+            <table>
+                <h3>Cart Totals</h3>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>₹ 2272</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><Strong>₹ 2272</Strong></td>
+                </tr>
+            </table>
+            <button class="normal">Process to checkout</button>
         </div>
     </section>
-    
-    <section id="form-details"class="section-m1">
-        <form action="">
-            <span>LEAVE A MESSAGE</span>
-            <h2>We love to here from you</h2>
-            <input type="text" placeholder="Your Name">
-            <input type="text" placeholder="E-mail">
-            <input type="text" placeholder="Subject">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <button type="submit" class="normal"> Submit</button>
-        </form>
-
-        <div id="people">
-            <div>
-                <img src="/img/people/1.png" alt="">
-                <p><span>John Bhaiya</span> <br>Degination:- something <br> ph no: +91 78945 87452 <br>E-mail : contact.hello@gmail.com</p>
-            </div>
-            <div>
-                <img src="/img/people/2.png" alt="">
-                <p><span>Pawan Bhaiya</span> <br>Degination :- something<br> ph no: +91 78945 87452 <br>E-mail : contact.hello@gmail.com</p>
-            </div>
-            <div>
-                <img src="/img/people/3.png" alt="">
-                <p><span>John Bhaiya</span> <br>Degination :- something<br> ph no: +91 78945 87452 <br>E-mail : contact.hello@gmail.com</p>
-            </div>
-        </div>
-    </section>
-
-
 
     <section id="newsletter" class="section-p1 section-m1">
         <div class="newstext">
